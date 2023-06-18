@@ -7,7 +7,7 @@ public class BAi5 {
   public static void main(String[] args) {
 
     int n, m, a;
-    DecimalFormat decimalFormat = new DecimalFormat("#.##");
+    DecimalFormat decimalFormat = new DecimalFormat( "#.##");
     Scanner scanner = new Scanner(System.in);
     System.out.println("Nhập n là chiều dài sân chơi: ");
     n = scanner.nextInt();

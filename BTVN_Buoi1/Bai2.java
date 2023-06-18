@@ -27,7 +27,7 @@ public class Bai2 {
     System.out.println("Phần dư của " + a + " % " + b + " = " + du);
 
     float thuong = (float) a / b;
-    System.out.println(a + " / " + b + " = " +
+    System.out.println("Thương của "+ a + " / " + b + " = " +
         decimalFormat.format(thuong));  // làm tròn đến 2 chữ số thập phân
   }
 }
