@@ -1,4 +1,4 @@
-package BTVN_Buoi1;
+package BTVN_NgoHao.BTVN_Buoi1;
 
 import java.text.DecimalFormat;
 import java.util.Scanner;

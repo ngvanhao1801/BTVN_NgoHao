@@ -1,4 +1,4 @@
-package BTVN_Buoi2;
+package BTVN_NgoHao.BTVN_Buoi2;
 
 import java.util.Scanner;
 

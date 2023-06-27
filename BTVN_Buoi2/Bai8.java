@@ -1,4 +1,4 @@
-package BTVN_Buoi2;
+package BTVN_NgoHao.BTVN_Buoi2;
 import java.util.Scanner;
 public class Bai8 {
     public static void main(String[] args) {
