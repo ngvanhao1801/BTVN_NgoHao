@@ -3,7 +3,10 @@ package Buoi6;
 import java.util.Scanner;
 
 public class Bai3 {
-    public static void main(String[] args) {
+//  Nhập mảng gồm n phần tử nguyên (n>=3 && n <= 100)
+//  Nếu tất cả các phần tử trong mảng đều là số hoàn hảo thì tìm khoảng cách xa nhất giữa các phần tử trong mảng(Khoảng cách giữa max và min)
+//  Ngược lại: Xóa hết các phần tử lẻ trong mảng và in ra màn hình
+  public static void main(String[] args) {
       Scanner scanner = new Scanner(System.in);
 
       int n;
@@ -18,17 +21,17 @@ public class Bai3 {
         arr[i] = scanner.nextInt();
       }
       // Kiểm tra tất cả các phần tử có phải là số hoàn hảo hay không
-      boolean isPerfectNumbers = true;
+      boolean soHoanHao = true;
 
       for (int num : arr) {
         if (!isPerfectNumber(num)) {
-          isPerfectNumbers = false;
+          soHoanHao = false;
           break;
         }
       }
 
       // Trường hợp tất cả phần tử là số hoàn hảo
-      if (isPerfectNumbers) {
+      if (soHoanHao) {
         int max = Integer.MIN_VALUE;
         int min = Integer.MAX_VALUE;
 

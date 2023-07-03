@@ -5,6 +5,11 @@ import java.util.List;
 import java.util.Scanner;
 
 public class ChuoiKiTu {
+//  Viết chương trình nhập vào 1 chuỗi ký tự bất kỳ.
+//  Yêu cầu:
+//  Cho biết có bao nhiêu ký tự số
+//  Tính tích các chữ số, biết các số đó là ước của tổng các chữ số
+
   public static void main(String[] args) {
     Scanner scanner = new Scanner(System.in);
     System.out.print("Nhập vào một chuỗi ký tự: ");

@@ -3,6 +3,12 @@ package Buoi7;
 import java.util.Scanner;
 
 public class Bai1 {
+//  Viết hàm thực hiện các yêu cầu sau
+//  Nhập vào một số nguyên n bất kì với n > 3
+//  Nhập vào một số thực x bất kì với x != 0
+//  Viết hàm tính S(x, n)
+//  Hàm main hoàn thiện các yêu cầu bằng các lời gọi hàm S
+
   public static void main(String[] args) {
     Scanner scanner = new Scanner(System.in);
 

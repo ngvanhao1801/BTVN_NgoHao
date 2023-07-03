@@ -6,6 +6,19 @@ import java.util.Comparator;
 import java.util.Scanner;
 
 public class LibraryManagement {
+//  Viết chương trình quản lý một danh sách books của một thư viện
+//  Yêu cầu: Tạo class (1đ)
+//  Tạo class Document, Book gồm các thuộc tính như hình và các phương thức cần thiết khác
+//      Class Book được kế thừa từ class Document
+//Tạo menu thực hiện các chức năng sau:
+//  1.Add book: cho phép người dùng add thêm 1 đối tượng book vào danh sách books của thư viện(Các đối tượng không được trùng id).
+//  2.Edit book by id: Cho phép người dùng chọn edit 1 trong các thuộc tính của book theo id
+//  3.Delete book by id: Cho phép người dùng xóa một đối tượng book ra khỏi danh sách
+//  4.Sort books by name (ascending): Cho phép người dùng sắp xếp sách theo tên sách của thứ tự trong bảng chữ cái
+//  5.Sort books by price (descending): Cho phép người dùng sắp xếp sách theo giá giảm dần.
+//  6.Show all books: Hiển thị danh sách books có trong thư viện
+//  7.Exit: Cho phép thoát chương trình
+
   private ArrayList<Book> books;
   private Scanner scanner;
 
