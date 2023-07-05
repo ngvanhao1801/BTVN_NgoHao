@@ -3,6 +3,12 @@ package Buoi6;
 import java.util.Scanner;
 
 public class Bai4 {
+//  Nhập chuỗi ký tự và chuẩn hóa chuỗi tên riêng
+//+Không còn dấu cách ở hai đầu.
+//+ Giữa hai từ chỉ cách nhau đúng 1 dấu cách.
+//+ Sau dấu cách viết Hoa chữ cái đầu , còn lại viết thường.
+//  In chuỗi ra màn hình sau khi chuẩn hóa
+
   public static void main(String[] args) {
     Scanner scanner = new Scanner(System.in);
 

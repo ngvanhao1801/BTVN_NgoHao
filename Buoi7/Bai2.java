@@ -3,6 +3,11 @@ package Buoi7;
 import java.util.Scanner;
 
 public class Bai2 {
+//  Viết hàm thực hiện các yêu cầu sau
+//  Nhập vào một số nguyên n bất kì (2<n<=50)
+//  Hàm nhập mảng gồm n phần tử thực
+//  Tính tổng tất cả các phần tử có phần nguyên là số nguyên tố và in ra màn hình
+//  Xóa tất cả phần tử có phần thập phân >= 0.5
   public static void main(String[] args) {
     Scanner scanner = new Scanner(System.in);
 
@@ -17,16 +22,6 @@ public class Bai2 {
       System.out.print("arr[" + i + "] = ");
       arr[i] = scanner.nextInt();
     }
-
-//    System.out.print("Nhập vào số nguyên n: ");
-//    int n = scanner.nextInt();
-//
-//    double[] arr = new double[n];
-//    System.out.println("Nhập các phần tử của mảng:");
-//    for (int i = 0; i < n; i++) {
-//      arr[i] = scanner.nextDouble();
-//    }
-
     double sum = calculateSumOfPrimeIntegers(arr);
     System.out.println("Tổng các phần tử có phần nguyên là số nguyên tố là: " + sum);
 

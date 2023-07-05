@@ -3,6 +3,13 @@ package Buoi4.Bai1;
 import java.util.*;
 
 public class RunMain {
+//  Bài tập: Xây dựng lớp Person gồm các thuộc tính: id, name, address.
+//  Yêu cầu: Sắp xếp sử dụng một trong 2 interface đã học, làm cả 2 cách càng tốt
+//  Tại class RunMain khai báo 1 danh sách person và nhập dữ liệu cho danh sách person đó.
+//  Sử dụng try catch để bắt các lỗi nhập dữ liệu từ bàn phím
+//  Sắp xếp danh sách theo chiều tăng dần của id và xuất ra màn hình
+//  Sắp xếp theo name theo thứ tự trong bảng chữ cái, nếu tên trùng nhau thì sẽ sắp xếp theo address giảm dần trong bảng chữ cái và xuất ra màn hình
+
   public static void main(String[] args) {
     List<Person> personList = new ArrayList<>();
 
@@ -32,14 +39,10 @@ public class RunMain {
           return Integer.compare(p1.getId(), p2.getId());
         }
       });
-
-      // Print the sorted person list
       System.out.println("Sắp xếp ID theo thứ tư tăng dần:");
       for (Person person : personList) {
         System.out.println(person.getId() + "\t" + person.getName() + "\t" + person.getAddress());
       }
-
-      // Sort the person list by name in alphabetical order, and by address in descending alphabetical order if names are the same
       Collections.sort(personList, new Comparator<Person>() {
         @Override
         public int compare(Person p1, Person p2) {
@@ -50,9 +53,8 @@ public class RunMain {
           }
         }
       });
-
-      // Print the sorted person list
-      System.out.println("\nSắp xếp theo Name theo thứ tự trong bảng chữ cái, nếu tên trùng nhau thì sẽ sắp xếp theo address giảm dần trong bảng chữ cái:");
+      System.out.println("\nSắp xếp theo Name theo thứ tự trong bảng chữ cái, nếu tên trùng nhau thì sẽ sắp xếp theo " +
+          "address giảm dần trong bảng chữ cái:");
       for (Person person : personList) {
         System.out.println(person.getId() + "\t" + person.getName() + "\t" + person.getAddress());
       }
