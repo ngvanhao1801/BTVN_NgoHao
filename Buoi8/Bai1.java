@@ -19,16 +19,13 @@ public class Bai1 {
       System.out.print("arr[" + i + "] = ");
       arr[i] = scanner.nextInt();
     }
-
     // Kiểm tra mảng có 2 số chẵn gần nhau hay không
     boolean hasAdjacentEvenNumbers = checkAdjacentEvenNumbers(arr);
     System.out.println("Mảng có 2 số chẵn gần nhau? " + (hasAdjacentEvenNumbers ? "YES" : "NO"));
-
     // Tách mảng thành mảng lẻ và mảng chẵn
     ArrayList<Integer> oddArray = new ArrayList<>();
     ArrayList<Integer> evenArray = new ArrayList<>();
     separateOddAndEven(arr, oddArray, evenArray);
-
     // In ra mảng lẻ và mảng chẵn
     if (oddArray.size() == 0 || evenArray.size() == 0) {
       System.out.println("-1");
@@ -38,14 +35,12 @@ public class Bai1 {
       printArray(evenArray);
       System.out.println();
     }
-
     // Sắp xếp mảng giảm dần và in ra màn hình
     Arrays.sort(arr);
     reverseArray(arr);
     System.out.println("Mảng sau khi sắp xếp giảm dần:");
     printArray(arr);
   }
-
   // Kiểm tra mảng có 2 số chẵn gần nhau hay không
   public static boolean checkAdjacentEvenNumbers(int[] arr) {
     for (int i = 0; i < arr.length - 1; i++) {
@@ -55,7 +50,6 @@ public class Bai1 {
     }
     return false;
   }
-
   // Tách mảng thành mảng lẻ và mảng chẵn
   public static void separateOddAndEven(int[] arr, ArrayList<Integer> oddArray, ArrayList<Integer> evenArray) {
     for (int num : arr) {
@@ -68,7 +62,6 @@ public class Bai1 {
       }
     }
   }
-
   // In ra một mảng
   public static void printArray(ArrayList<Integer> arr) {
     for (int i = 0; i < arr.size(); i++) {
@@ -78,7 +71,6 @@ public class Bai1 {
       }
     }
   }
-
   // In ra một mảng nguyên
   public static void printArray(int[] arr) {
     for (int i = 0; i < arr.length; i++) {
@@ -89,7 +81,6 @@ public class Bai1 {
     }
     System.out.println();
   }
-
   // Sắp xếp mảng giảm dần
   public static void reverseArray(int[] arr) {
     int left = 0;

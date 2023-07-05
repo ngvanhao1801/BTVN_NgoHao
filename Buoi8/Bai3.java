@@ -49,14 +49,12 @@ public class Bai3 {
           count++;
         }
       }
-
       if (count > 0) {
         return sum / count;
       } else {
         return Double.NaN;
       }
     }
-
     // Chuyển tất cả các phần tử có phần nguyên lẻ thành số 1.23
     public static void convertOddIntegers(double[] arr) {
       for (int i = 0; i < arr.length; i++) {
@@ -65,7 +63,6 @@ public class Bai3 {
         }
       }
     }
-
     // In ra một mảng
     public static void printArray(double[] arr) {
       for (int i = 0; i < arr.length; i++) {
